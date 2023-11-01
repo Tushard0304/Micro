@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- <h1 class="text-center">Welcome To Calculator !</h1> -->
+    <div class="container">
+        <input type="text" id="output" value="" readonly>
+        <div class="calculations">
+            <div class="buttons-container">
+                <button id="btn" onclick="DisplayButton('7')">7</button>
+                <button id="btn" onclick="DisplayButton('8')">8</button>
+                <button id="btn" onclick="DisplayButton('9')">9</button>
+                <button id="btn" onclick="Delete()" class="del">DEL</button>
+                <button id="btn" onclick="DisplayButton('4')">4</button>
+                <button id="btn" onclick="DisplayButton('5')">5</button>
+                <button id="btn" onclick="DisplayButton('6')">6</button>
+                <button id="btn" onclick="DisplayButton('+')">+</button>
+                <button id="btn" onclick="DisplayButton('1')">1</button>
+                <button id="btn" onclick="DisplayButton('2')">2</button>
+                <button id="btn" onclick="DisplayButton('3')">3</button>
+                <button id="btn" onclick="DisplayButton('-')">-</button>
+                <button id="btn" onclick="DisplayButton('.')">.</button>
+                <button id="btn" onclick="DisplayButton('0')">0</button>
+                <button id="btn" onclick="DisplayButton('/')">/</button>
+                <button id="btn" onclick="DisplayButton('*')">*</button>
+                <button id="btn" onclick="Reset()" class="reset span">RESET</button>
+                <button id="btn" onclick="FinalResult()" class="sum span">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
